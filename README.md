@@ -78,13 +78,3 @@ ITEM_PIPELINES = {
     "books_scraper.pipelines.CleaningPipeline": 300,
 }
 ```
-
-Auquel on ajoutera la pipeline des images native à Scrapy :
-
-```
-ITEM_PIPELINES = {
-    "books_scraper.pipelines.CleaningPipeline": 300,
-    "scrapy.pipelines.images.ImagesPipeline": 800,
-}
-IMAGES_STORE = "images"
-```
